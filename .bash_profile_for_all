@@ -19,6 +19,9 @@ git config --global color.status auto
 git config --global color.branch auto
 git config --global color.ui auto
 
+# optimize git for multiple cores/CPUs
+git config --global pack.threads 0
+
 #choose a slicker editor than (default) Pico
 #EDITOR="bbedit -w"
 export EDITOR='nano'
