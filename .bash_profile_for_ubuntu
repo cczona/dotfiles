@@ -1,0 +1,20 @@
+## set terminal colors
+setterm -foreground black -bold -background white -store
+
+#directly call files within these paths ie. "'cd grub' instead of 'cd /boot/grub'"
+#NOTE: bash doesn't autocomplete the paths, though an install/config of bash-completion might be able to make that happen
+export CDPATH=~:/etc/network:/etc/httpd:/boot/grub:$CDPATH
+
+#alias CALL_AS_THIS='instead of this'
+alias update="sudo aptitude update"
+alias install="sudo aptitude install"
+alias upgrade="sudo aptitude safe-upgrade"
+alias remove="sudo aptitude remove"
+
+alias free="free -m"
+alias ifc="ifconfig"
+alias top="htop"
+
+alias restart="sudo shutdown -r now"
+
+alias httpdconf="mate /etc/apache2"

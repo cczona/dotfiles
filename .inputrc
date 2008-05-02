@@ -1,0 +1,3 @@
+# get around Tab completions' default dehaviour to not complete ( and correct )
+# the "wrong" case. "cd /lib[TAB]" becomes "cd /Library"
+set completion-ignore-case On
