@@ -62,3 +62,4 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias top="top -ocpu -O+rsize -s 5 -tF"
 alias nslookup="dig" #nslookup is deprecated and buggy
+alias scp="scp -r"
