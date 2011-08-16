@@ -1,5 +1,5 @@
 #custom prompt; $color is set in .bash_profile
-PS1="\\n\[\e[$color;1m\][\u@\h] \w \[\e[0m\]"
+PS1="\\n\\n\e[1;30m\]\u@\h  \e[0m\]\\n[\w] "
 
 # use same timezone everywhere
 export TZ=America/Los_Angeles
