@@ -9,9 +9,6 @@
 # ~						(then double-tab) list usernames
 # 
 # man -k term | grep "\([15]\)"				search all manpages for a keyword
-# 
-# to start the MacPorts version of MySQL daemon: "cd /opt/local; sudo /opt/local/lib/mysql5/bin/mysqld_safe &"
-# 
 ## /REMINDERS ##
 
 ##set prompt color
