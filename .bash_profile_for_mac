@@ -1,9 +1,6 @@
 #required for textMate Bundles repository downloads.  See <http://macromates.com/textmate/manual/bundles#getting_more_bundles>
 export LC_CTYPE=en_US.UTF-8
 
-#Django
-export PYTHONPATH="~/Django"
-alias dj="python manage.py"
 
 #choose a slicker editor than (default) Pico
 #EDITOR="bbedit -w"
