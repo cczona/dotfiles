@@ -6,9 +6,9 @@ export LC_CTYPE=en_US.UTF-8
 export EDITOR='mate -w'
 export SVN_EDITOR="mate -w"
 
-#directly call files within these paths ie. "'cd sansum' instead of 'cd /Users/cczona/Sites/sansum'"
+#directly call files within these paths ie. "'cd my-site' instead of 'cd /Users/cczona/Sites/my-site'"
 #NOTE: bash doesn't autocomplete the paths, though an install/config of bash-completion might be able to make that happen
-export CDPATH=~/Sites:/Library/WebServer/Documents:/etc/apache2:/Library:~/Library:$CDPATH
+export CDPATH=~/Sites:/etc/apache2:/Library:~/Library:$CDPATH
 
 #variables for 'shopt -s cdable_vars' to use
 export cs='~/Sites/sansumclinic-org/trunk/ContentStore'
