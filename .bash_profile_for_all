@@ -8,12 +8,14 @@ export TZ=America/Los_Angeles
 export LSCOLORS=Exgxdxdxbxdxdxaxaxexex
 
 # how many commands to keep in history?
-export HISTSIZE=50
+export HISTSIZE=150
 
-#don't store duplicates in history
+# erase duplicates from history
+export HISTCONTROL=erasedups
+export HISTCONTROL=ignoreboth #for OSs that don't support erasedups
 export HISTIGNORE="&"
 
-# turn on color for git
+# turn on color for 
 git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
@@ -21,6 +23,7 @@ git config --global color.ui auto
 
 # optimize git for multiple cores/CPUs
 git config --global pack.threads 0
+
 
 #choose a slicker editor than (default) Pico
 #EDITOR="bbedit -w"
@@ -41,6 +44,7 @@ shopt -s cdspell  #forgive minor typos
 shopt -s dotglob #autocomplete paths that start with "."
 shopt -s nocaseglob #case insensitive autocomplete
 shopt -s cdable_vars #use 'export foo=bar' to create a cd-able variable called foo, whose value is bar (i.e shortcut to 'cd bar')
+shopt -s histappend #retain history across terminal sessions
 
 # aliases
 alias more="less"
