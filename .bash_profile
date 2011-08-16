@@ -9,6 +9,8 @@
 # ~						(then double-tab) list usernames
 # 
 # man -k term | grep "\([15]\)"				search all manpages for a keyword
+
+
 ## /REMINDERS ##
 
 ##set prompt color
@@ -40,5 +42,3 @@ if [[ $OSTYPE = 'darwin9.0' || $TERM_PROGRAM = 'Apple_Terminal' ]]; then
 elif [[ -f /proc/version && /proc/version = 'ubuntu' ]]; then #FIXME
 	source ~/.bash_profile_for_ubuntu 
 fi
-
-
