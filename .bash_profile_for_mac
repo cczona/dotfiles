@@ -1,6 +1,8 @@
 #required for textMate Bundles repository downloads.  See <http://macromates.com/textmate/manual/bundles#getting_more_bundles>
 export LC_CTYPE=en_US.UTF-8
 
+# Ruby's path for doing 'require'
+export RUBYLIB=$RUBYLIB:~/bin
 
 #choose a slicker editor than (default) Pico
 export EDITOR='mate -w'
