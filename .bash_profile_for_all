@@ -37,6 +37,7 @@ export RUBYOPT=rubygems
 export TMOUT=0
 
 #directories for cd to look into for path autocompletions
+#ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
 export CDPATH=.:~:/var/log/httpd
 
 #set shell options (-s=set/on -u=unset/off)
