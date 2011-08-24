@@ -31,7 +31,8 @@ export EDITOR='nano'
 export SVN_EDITOR="nano"
 
 # Ruby, autoload RubyGems library
-export RUBYOPT=rubygems
+# DISABLED at RVM's strong suggestion 
+#export RUBYOPT=rubygems
 
 #don't timeout, please
 export TMOUT=0
