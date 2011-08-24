@@ -39,6 +39,6 @@ fi
 source ~/.bash_profile_for_all
 if [[ $OSTYPE =~ 'darwin' ]]; then
 	source ~/.bash_profile_for_mac
-elif [[ -f /proc/version && /proc/version = 'ubuntu' ]]; then #FIXME
+elif [[ $OSTYPE =~ 'ubuntu' ]]; then
 	source ~/.bash_profile_for_ubuntu 
-fi
+if
