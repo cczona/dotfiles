@@ -20,10 +20,5 @@ export uucsr='~/Sites/uusantarosa/branches/fresh_start'
 alias startvnc="sudo SystemStarter start VNC"
 alias stopvnc="sudo SystemStarter stop VNC"
 alias firefox="/Applications/*Browser\ applications/Firefox.app/Contents/MacOS/firefox-bin -ProfileManager"
-
-#general aliases
-alias mysql="mysql -u root -p"
-alias mysqldump="mysqldump -u root -p"
-alias mysqlimport="mysqlimport -u root -p"
 alias mysqlstart="sudo SystemStarter start MySQL"
 
