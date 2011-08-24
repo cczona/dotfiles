@@ -38,4 +38,5 @@ elif [[ $OSTYPE =~ 'ubuntu' ]]; then
 	source ~/.bash_profile_for_ubuntu 
 elif [[ $OSTYPE =~ 'hpux' ]]; then
   	source ~/.bash_profile_for_hpux
+
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
