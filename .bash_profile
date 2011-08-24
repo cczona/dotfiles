@@ -37,7 +37,7 @@ fi
 
 ## include files; next-to-last so they override defaults set above
 source ~/.bash_profile_for_all
-if [[ $OSTYPE = 'darwin9.0' || $TERM_PROGRAM = 'Apple_Terminal' ]]; then
+if [[ $OSTYPE =~ 'darwin' ]]; then
 	source ~/.bash_profile_for_mac
 elif [[ -f /proc/version && /proc/version = 'ubuntu' ]]; then #FIXME
 	source ~/.bash_profile_for_ubuntu 
