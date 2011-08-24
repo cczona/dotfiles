@@ -8,8 +8,8 @@ export RUBYLIB=$RUBYLIB:~/bin
 export EDITOR='mate -w'
 export SVN_EDITOR="mate -w"
 
-#directly call files within these paths ie. "'cd my-site' instead of 'cd /Users/cczona/Sites/my-site'"
-#NOTE: bash doesn't autocomplete the paths, though an install/config of bash-completion might be able to make that happen
+#directories for cd to look into for path autocompletions
+#ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
 export CDPATH=~/Sites:/etc/apache2:/Library:~/Library:$CDPATH
 
 #variables for 'shopt -s cdable_vars' to use
