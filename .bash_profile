@@ -27,6 +27,7 @@ if [[ $HOSTNAME =~ '.local' ]]; then COLOR=30
 elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=32
 elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=35
 elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=31
+elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=34
 fi
 
 
