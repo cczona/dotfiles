@@ -22,3 +22,14 @@ alias stopvnc="sudo SystemStarter stop VNC"
 alias firefox="/Applications/*Browser\ applications/Firefox.app/Contents/MacOS/firefox-bin -ProfileManager"
 alias mysqlstart="sudo SystemStarter start MySQL"
 
+## only export when we're done doing modifications
+## remember these are inverse sort; final addition will be first in $PATH
+PATH=~/.gem/ruby/1.8/bin:$PATH
+PATH=~/.gem/ruby/1.9/bin:$PATH
+PATH=/Library/PEAR/bin:$PATH
+PATH=/Developer/Tools:$PATH
+PATH=/usr/libexec:$PATH
+PATH=~/.rvm/bin:$PATH
+PATH=~/bin:$PATH
+PATH=/usr/local/bin:$PATH
+export PATH
