@@ -36,4 +36,4 @@ if [[ $OSTYPE =~ 'darwin' ]]; then
 	source ~/.bash_profile_for_mac
 elif [[ $OSTYPE =~ 'ubuntu' ]]; then
 	source ~/.bash_profile_for_ubuntu 
-if
+# NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
