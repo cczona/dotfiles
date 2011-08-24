@@ -30,6 +30,12 @@ alias startvnc="sudo SystemStarter start VNC"
 alias stopvnc="sudo SystemStarter stop VNC"
 alias firefox="/Applications/*Browser\ applications/Firefox.app/Contents/MacOS/firefox-bin -ProfileManager"
 alias mysqlstart="sudo SystemStarter start MySQL"
+alias brewfix='sudo chown -R $USER /usr/local'
+
+#do completions if possible
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
 
 ## only export when we're done doing modifications
 ## remember these are inverse sort; final addition will be first in $PATH
@@ -40,5 +46,5 @@ PATH=/Developer/Tools:$PATH
 PATH=/usr/libexec:$PATH
 PATH=~/.rvm/bin:$PATH
 PATH=~/bin:$PATH
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:$PATH #brew req't
 export PATH
