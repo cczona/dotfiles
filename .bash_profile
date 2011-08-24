@@ -35,9 +35,10 @@ fi
 source ~/.bash_profile_for_all
 if [[ $OSTYPE =~ 'darwin' ]]; then
 	source ~/.bash_profile_for_mac
-elif [[ $OSTYPE =~ 'ubuntu' ]]; then
-	source ~/.bash_profile_for_ubuntu 
+elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]]; then
+    source ~/.bash_profile_for_linux 
 elif [[ $OSTYPE =~ 'hpux' ]]; then
-  	source ~/.bash_profile_for_hpux
+    source ~/.bash_profile_for_hpux
 fi
+
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
