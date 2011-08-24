@@ -10,6 +10,9 @@ export RUBYLIB=$RUBYLIB:~/bin
 # Enable interactive RVM
 [[ -s "/Users/cczona/.rvm/scripts/rvm" ]] && source "/Users/cczona/.rvm/scripts/rvm"
 
+# required by git-cola
+export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
 #choose a slicker editor than (default) Pico
 export EDITOR='mate -w'
 export SVN_EDITOR="mate -w"
