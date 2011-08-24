@@ -1,0 +1,1 @@
+alias ls="ls -Alp" # -h and -G flags aren't supported
