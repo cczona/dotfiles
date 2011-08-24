@@ -22,16 +22,11 @@
 # 35=>purple
 # 36=>cyan
 
-color=36 #default
-
-if [[ $HOSTNAME = 'Lovers-Walk.local' ]]; then
-	color=31
-elif [[ $USER = 'cczona' ]]; then
-	color=34
-elif [[ $USER = 'uufsc' ]]; then
-	color=35
-elif [[ $USER = 'sansum' ]]; then
-	color=32
+COLOR=36 #default
+if [[ $HOSTNAME =~ '.local' ]]; then COLOR=30
+elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=34
+elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=35
+elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=31
 fi
 
 
