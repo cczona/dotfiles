@@ -21,9 +21,8 @@ export SVN_EDITOR="mate -w"
 #ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
 export CDPATH=~/Sites:/etc/apache2:/Library:~/Library:$CDPATH
 
-#variables for 'shopt -s cdable_vars' to use
-export cs='~/Sites/sansumclinic-org/trunk/ContentStore'
-export uucsr='~/Sites/uusantarosa/branches/fresh_start'
+#variables that 'shopt -s cdable_vars' can expand into convenience paths for cd
+#i.e. export mys='~/Sites/path/to/my_site_or_nuisance_filename'
 
 #Mac-specific aliases
 alias startvnc="sudo SystemStarter start VNC"
