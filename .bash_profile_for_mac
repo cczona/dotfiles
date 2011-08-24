@@ -4,6 +4,12 @@ export LC_CTYPE=en_US.UTF-8
 # Ruby's path for doing 'require'
 export RUBYLIB=$RUBYLIB:~/bin
 
+# required by RVM (under OSX 10.7/Lion only)
+#export CC=gcc-4.2
+
+# Enable interactive RVM
+[[ -s "/Users/cczona/.rvm/scripts/rvm" ]] && source "/Users/cczona/.rvm/scripts/rvm"
+
 #choose a slicker editor than (default) Pico
 export EDITOR='mate -w'
 export SVN_EDITOR="mate -w"
