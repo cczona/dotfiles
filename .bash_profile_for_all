@@ -49,7 +49,7 @@ shopt -s cdable_vars #use 'export foo=bar' to create a cd-able variable called f
 shopt -s histappend #retain history across terminal sessions
 
 # aliases
-alias more="less"
+alias more="less -M -W"
 alias qri="qri -O eEnNpPxXfFaAmM"
 alias pico="nano"
 alias cp="cp -i"
