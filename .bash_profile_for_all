@@ -10,6 +10,10 @@ export LSCOLORS=Exgxdxdxbxdxdxaxaxexex
 # how many commands to keep in history?
 export HISTSIZE=150
 
+# page nicely, please
+export PAGER="less -MW"
+export MANPAGER="less -MW"
+
 # erase duplicates from history
 export HISTCONTROL=erasedups
 export HISTCONTROL=ignoreboth #for OSs that don't support erasedups
@@ -49,7 +53,7 @@ shopt -s cdable_vars #use 'export foo=bar' to create a cd-able variable called f
 shopt -s histappend #retain history across terminal sessions
 
 # aliases
-alias more="less -M -W"
+alias more="less -MW"
 alias qri="qri -O eEnNpPxXfFaAmM"
 alias pico="nano"
 alias cp="cp -i"
