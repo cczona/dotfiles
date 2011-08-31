@@ -41,4 +41,9 @@ elif [[ $OSTYPE =~ 'hpux' ]]; then
     source ~/.bash_profile_for_hpux
 fi
 
+# start each login with a random pithy little something
+# motd == "message of the day"
+# NOTE: -a flag brings in stuff from the databases labeled offensive
+fortune -a > /etc/motd
+
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
