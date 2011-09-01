@@ -46,4 +46,5 @@ PATH=/usr/libexec:$PATH
 PATH=~/.rvm/bin:$PATH
 PATH=~/bin:$PATH
 PATH=/usr/local/bin:$PATH #brew req't
+PATH=.:$PATH
 export PATH
