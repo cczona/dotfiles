@@ -19,15 +19,17 @@ export HISTCONTROL=erasedups
 export HISTCONTROL=ignoreboth #for OSs that don't support erasedups
 export HISTIGNORE="&"
 
-# turn on color for 
+# turn on color for git
 git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
 git config --global color.ui auto
 
+# turn on color for ri (ruby documentation viewer)
+export RI=" --format ansi"
+
 # optimize git for multiple cores/CPUs
 git config --global pack.threads 0
-
 
 #choose a slicker editor than (default) Pico
 #EDITOR="bbedit -w"
