@@ -36,7 +36,7 @@ source ~/.bash_profile_for_all
 if [[ $OSTYPE =~ 'darwin' ]]; then
 	source ~/.bash_profile_for_mac
 elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]]; then
-    source ~/.bash_profile_for_linux 
+    source ~/.bash_profile_for_ubuntu 
 elif [[ $OSTYPE =~ 'hpux' ]]; then
     source ~/.bash_profile_for_hpux
 fi
