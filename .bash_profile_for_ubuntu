@@ -18,3 +18,6 @@ alias top="htop"
 alias restart="sudo shutdown -r now"
 
 alias httpdconf="mate /etc/apache2"
+
+# Enable interactive RVM
+[[ -s "/Users/cczona/.rvm/scripts/rvm" ]] && source "/Users/cczona/.rvm/scripts/rvm"
