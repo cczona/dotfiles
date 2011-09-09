@@ -1,0 +1,16 @@
+[user]
+	name = cczona
+	email = cczona@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[pack]
+	threads = 0
+[alias]
+	meld = /usr/local/bin/git-meld
+[difftool]
+	prompt = false
+[diff]
+	tool = meld
