@@ -10,7 +10,7 @@ alias update="sudo aptitude update"
 alias install="sudo aptitude install"
 alias upgrade="sudo aptitude safe-upgrade"
 alias remove="sudo aptitude remove"
-
+alias ls="ls -AlphG"
 alias free="free -m"
 alias ifc="ifconfig"
 alias top="htop"
@@ -20,4 +20,5 @@ alias restart="sudo shutdown -r now"
 alias httpdconf="mate /etc/apache2"
 
 # Enable interactive RVM
-[[ -s "/Users/cczona/.rvm/scripts/rvm" ]] && source "/Users/cczona/.rvm/scripts/rvm"
+# moved this to .bashrc as specified in 'rvm notes'
+#[[ -s "/Users/cczona/.rvm/scripts/rvm" ]] && source "/Users/cczona/.rvm/scripts/rvm"
