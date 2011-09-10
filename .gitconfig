@@ -5,12 +5,14 @@
 	ui = auto
 [pack]
 	threads = 0
-[alias]
-	meld = /usr/local/bin/git-meld
 [difftool]
 	prompt = false
 [diff]
 	tool = meld
+[alias]
+	meld = /usr/local/bin/git-meld
+	ci = commit
+	st = status
 [user]
 	name = cczona
 	email = cczona@gmail.com
