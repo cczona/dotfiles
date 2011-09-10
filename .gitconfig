@@ -1,6 +1,3 @@
-[user]
-	name = cczona
-	email = cczona@gmail.com
 [color]
 	diff = auto
 	status = auto
@@ -14,3 +11,6 @@
 	prompt = false
 [diff]
 	tool = meld
+[user]
+	name = cczona
+	email = cczona@gmail.com
