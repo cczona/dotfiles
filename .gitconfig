@@ -38,10 +38,10 @@
 [diff]
 	tool = diffmerge
   prompt = false
+[difftool]
+  prompt = false
   keepBackup = false
 [difftool "diffmerge"]
 	cmd = diffmerge "$LOCAL" "$REMOTE"
 [git-tmbundle]
   gitx-path = /Applications/GitX.app
-[pack]
-	threads = 0
