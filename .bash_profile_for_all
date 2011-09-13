@@ -78,4 +78,3 @@ alias mysqldump="mysqldump -u root -p"
 alias mysqlimport="mysqlimport -u root -p"
 alias rpg="pwgen -Bcnsy1 18"
 alias ps="ps -x"
-
