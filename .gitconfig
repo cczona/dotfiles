@@ -1,0 +1,45 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+	interactive = auto
+[user]
+	name = cczona
+	email = cczona@gmail.com
+[pack]
+	threads = 0
+[core]
+# NOTE: this is the source of "sh: -+: invalid option" for git log, git diff, git show!
+#	pager = -+$LESS -FRX
+	whitespace = -blank-at-eol, -space-before-tab, -indent-with-non-tab, -tab-in-indent, -blank-at-eof, -cr-at-eol
+	excludesfile = ~/.gitignore-global
+	editor = mate -w
+	quotepath = false
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	di = diff
+	dc = diff --cached
+	dt = difftool
+	mt = mergetool
+	unstage = reset HEAD
+[merge]
+  tool = diffmerge
+[mergetool]
+  prompt = false
+  keepBackup = false
+[mergetool "diffmerge"]
+  path = /usr/bin/diffmerge
+	cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+	trustexitcode = false
+[diff]
+	tool = diffmerge
+  prompt = false
+  keepBackup = false
+[difftool "diffmerge"]
+	cmd = diffmerge "$LOCAL" "$REMOTE"
+[git-tmbundle]
+  gitx-path = /Applications/GitX.app
