@@ -1,3 +1,6 @@
+# Gnome terminals choke on the "\]" used in .bash_profile_for_all
+PS1="\\n\e[1;${COLOR}m\u@\h  \e[0m\\n[\w] "
+ 
 ## set terminal colors
 setterm -foreground black -bold -background white -store
 
