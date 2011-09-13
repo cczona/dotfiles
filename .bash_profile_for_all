@@ -68,7 +68,7 @@ alias logs="cd /private/var/log/"
 alias ls="ls -AlphG"
 alias mv="mv -i"
 alias rm="rm -i"
-alias top="top -ocpu -O+rsize -s 5"
+alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 alias nslookup="dig" #nslookup is deprecated and buggy
 alias scp="scp -r"
 alias mysql="mysql -u root -p"
@@ -76,4 +76,3 @@ alias mysqldump="mysqldump -u root -p"
 alias mysqlimport="mysqlimport -u root -p"
 alias rpg="pwgen -Bcnsy1 18"
 alias ps="ps -x"
-
