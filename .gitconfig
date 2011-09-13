@@ -25,6 +25,7 @@
 	dc = diff --cached
 	dt = difftool
 	mt = mergetool
+	logs = "log --stat"
 	unstage = reset HEAD
 [merge]
   tool = diffmerge
