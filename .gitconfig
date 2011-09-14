@@ -19,7 +19,7 @@
 #	pager = -+$LESS -FRX
 	whitespace = -blank-at-eol, -space-before-tab, -indent-with-non-tab, -tab-in-indent, -blank-at-eof, -cr-at-eol
 	excludesfile = ~/.gitignore-global
-	editor = mate -w
+	editor = git-editor
 	quotepath = false
 [alias]
 	ap = add --patch
