@@ -1,7 +1,5 @@
 #custom prompt; $color is set in .bash_profile
 PS1="\\n\e[1;${COLOR}m\]\u@\h  \e[0m\]\\n[\w] "
-# Gnome terminals choke on the "\]".  This works there:
-PS1="\\n\e[1;${COLOR}m\u@\h  \e[0m\\n[\w] "
 
 # use same timezone everywhere
 export TZ=America/Los_Angeles
@@ -67,10 +65,10 @@ alias du="du -hs"
 alias findme="find /[bcdehlrstuvw]* -name"
 alias grep="grep -E --color"
 alias logs="cd /private/var/log/"
-alias ls="ls -AlphGd"
+alias ls="ls -AlphG"
 alias mv="mv -i"
 alias rm="rm -i"
-alias top="top -ocpu -O+rsize -s 5"
+alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 alias nslookup="dig" #nslookup is deprecated and buggy
 alias scp="scp -r"
 alias mysql="mysql -u root -p"
