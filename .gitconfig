@@ -19,7 +19,8 @@
 #	pager = -+$LESS -FRX
 	whitespace = -blank-at-eol, -space-before-tab, -indent-with-non-tab, -tab-in-indent, -blank-at-eof, -cr-at-eol
 	excludesfile = ~/.gitignore-global
-	editor = git-editor
+# NOTE: git already calls the environment variable $EDITOR, a reliably platform-independent method. Stick with it.
+#       editor = $EDITOR
 	quotepath = false
 [alias]
 	ap = add --patch
