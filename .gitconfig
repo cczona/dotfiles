@@ -24,7 +24,7 @@
 [alias]
 	ap = add --patch
 	st = status
-	ci = commit
+	ci = commit -m
 	co = checkout
 	br = branch
 	bl= branch -al
