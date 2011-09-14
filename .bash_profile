@@ -11,6 +11,9 @@
 # man -k term | grep "\([15]\)"				search all manpages for a keyword
 
 
+# set Backspace & Delete keys to default functionality
+stty ek
+
 ## /REMINDERS ##
 
 ##set prompt color
