@@ -19,6 +19,7 @@
 	editor = mate -w
 	quotepath = false
 [alias]
+	ap = add --patch
 	st = status
 	ci = commit
 	co = checkout
