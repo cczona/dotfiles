@@ -4,6 +4,8 @@
 	branch = auto
 	ui = auto
 	interactive = auto
+[format]
+  pretty = "%Cblue%h%Creset [%cr] %s"
 [user]
 	name = cczona
 	email = cczona@gmail.com
