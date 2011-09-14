@@ -27,7 +27,7 @@
 	dc = diff --cached
 	dt = difftool
 	mt = mergetool
-	logs = "log --stat"
+	logs = "log --stat --pretty=\"%n%n%Cblue%h%Creset [%ci] %Cred%s&Creset\""
 	unstage = reset HEAD
 [merge]
   tool = diffmerge
