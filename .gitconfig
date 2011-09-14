@@ -23,6 +23,7 @@
 	ci = commit
 	co = checkout
 	br = branch
+	bl= branch -al
 	di = diff
 	dc = diff --cached
 	dt = difftool
