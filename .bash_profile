@@ -105,26 +105,26 @@ shopt -s cdable_vars #use 'export foo=bar' to create a cd-able variable called f
 shopt -s histappend #retain history across terminal sessions
 
 # aliases
-alias more="less -MW"
-alias qri="qri -O eEnNpPxXfFaAmM"
-alias pico="nano"
 alias cp="cp -i"
-alias rmrec="rm -r"
 alias crontab="crontab -e"
 alias du="du -hs"
 alias findme="find /[bcdehlrstuvw]* -name"
 alias grep="grep -E --color"
 alias logs="cd /private/var/log/"
 alias ls="ls -AlphG"
+alias more="less -MW"
 alias mv="mv -i"
-alias rm="rm -i"
-alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
-alias nslookup="dig" #nslookup is deprecated and buggy
-alias scp="scp -r"
 alias mysql="mysql -u root -p"
 alias mysqldump="mysqldump -u root -p"
 alias mysqlimport="mysqlimport -u root -p"
-alias rpg="pwgen -Bcnsy1 18"
+alias nslookup="dig" #nslookup is deprecated and buggy
+alias pico="nano"
 alias ps="ps -x"
+alias qri="qri -O eEnNpPxXfFaAmM"
+alias rm="rm -i"
+alias rmrec="rm -r"
+alias rpg="pwgen -Bcnsy1 18"
+alias scp="scp -r"
+alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
