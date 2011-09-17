@@ -110,6 +110,7 @@ alias crontab="crontab -e"
 alias du="du -hs"
 alias findme="find /[bcdehlrstuvw]* -name"
 alias grep="grep -E --color"
+alias irb="pry" #NOTE: these are not really 1:1 replacements! Just a temporary thing to get me used to using pry instead
 alias logs="cd /private/var/log/"
 alias ls="ls -AlphG"
 alias more="less -MW"
