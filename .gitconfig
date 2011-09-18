@@ -35,6 +35,7 @@
 	pu = pull
 	pr = pull --rebase
 	mt = mergetool
+	logf = "log --stat --pretty=fuller"
 	logs = "log --stat --pretty=\"%n%n%Cblue%h%Creset [%ci] %Cred%s%Creset\""
 	unstage = reset HEAD
 [merge]
