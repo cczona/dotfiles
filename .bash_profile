@@ -109,6 +109,7 @@ alias cp="cp -i"
 alias crontab="crontab -e"
 alias du="du -hs"
 alias findme="find /[bcdehlrstuvw]* -name"
+alias gemq="gem query --details --both --all --name-matches"
 alias grep="grep -E --color"
 alias irb="pry" #NOTE: these are not really 1:1 replacements! Just a temporary thing to get me used to using pry instead
 alias logs="cd /private/var/log/"
@@ -127,5 +128,6 @@ alias rmrec="rm -r"
 alias rpg="pwgen -Bcnsy1 18"
 alias scp="scp -r"
 alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
+
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
