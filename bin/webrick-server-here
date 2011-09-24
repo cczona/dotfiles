@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+# Adapted from http://microjet.ath.cx/webrickguide/html/What_is_WEBrick.html
+
+require 'webrick'
+
+include WEBrick    # let's import the namespace so 
+                   # I don't have to keep typing 
+                   # WEBrick:: in this documentation.
+                   
+def start_webrick(config = {})
+  config.update(:Port => 8080)     
+  server = HTTPServer.new(config)
+  yield server if block_given?
+  ['INT', 'TERM'].each {|signal| 
+    trap(signal) {server.shutdown}
+  }
+  server.start
+
+end
+
+start_webrick(:DocumentRoot => './')
