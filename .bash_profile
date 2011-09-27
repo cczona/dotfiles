@@ -35,11 +35,11 @@ fi
 
 
 ## include files; next-to-last so they override defaults set above
-if [[ $OSTYPE =~ 'darwin' ]]; then
+if [[ $OSTYPE =~ 'darwin' ]] && [ -f ~/.bashmac ]; then
 	source ~/.bashmac
-elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]]; then
+elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]] && [ -f ~/.bashubuntu ]; then
     source ~/.bashubuntu 
-elif [[ $OSTYPE =~ 'hpux' ]]; then
+elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
     source ~/.bashhpux
 fi
 
