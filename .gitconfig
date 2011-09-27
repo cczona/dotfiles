@@ -27,7 +27,8 @@
 	st = status
 	ci = commit --cleanup=whitespace -m
 	co = checkout
-	br = branch
+	br = branch -vv
+	bra = branch -vv -a
 	bl= branch -al
 	di = diff
 	dc = diff --cached
