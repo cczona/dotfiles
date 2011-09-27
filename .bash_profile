@@ -102,7 +102,7 @@ shopt -s cdspell  #forgive minor typos
 shopt -s dotglob #autocomplete paths that start with "."
 shopt -s nocaseglob #case insensitive autocomplete
 shopt -s cdable_vars #use 'export foo=bar' to create a cd-able variable called foo, whose value is bar (i.e shortcut to 'cd bar')
-shopt -s histappend #retain history across terminal sessions
+shopt -s histappend #retain history across multiple, possibly concurrent, terminal sessions
 
 # aliases
 alias cp="cp -i"
