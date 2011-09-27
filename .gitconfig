@@ -30,8 +30,10 @@
 	br = branch -vv
 	bra = branch -vv -a
 	bl= branch -al
-	di = diff
-	dc = diff --cached
+	dc  = diff --cached  --word-diff=color
+	dcl = diff --cached
+	di  = diff --word-diff=color
+	dil = diff
 	dt = difftool
 	pu = pull
 	pr = pull --rebase
