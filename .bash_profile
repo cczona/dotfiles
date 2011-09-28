@@ -81,8 +81,7 @@ export RI=" --format ansi"
 # optimize git for multiple cores/CPUs
 git config --global pack.threads 0
 
-#choose a slicker editor than (default) Pico
-#EDITOR="bbedit -w"
+# choose different editor than (default) Pico
 export EDITOR='nano'
 export SVN_EDITOR="nano"
 
