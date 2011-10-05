@@ -36,7 +36,7 @@ fi
 
 ## include files; next-to-last so they override defaults set above
 if [[ $OSTYPE =~ 'darwin' ]] && [ -f ~/.bashmac ]; then
-	source ~/.bashmac
+    source ~/.bashmac
 elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]] && [ -f ~/.bashubuntu ]; then
     source ~/.bashubuntu 
 elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
@@ -49,7 +49,7 @@ fi
 fortune -a
 
 #custom prompt; $color is set in .bash_profile
-PS1="\\n\e[1;${COLOR}m\]\u@\h  \e[0m\]\\n[\w] "
+PS1="\\n\e[1;${COLOR}m\]\u@\h  \e[0m\]\\n$(~/.rvm/bin/rvm-prompt i v g s)\\n[\w] "
 
 # use same timezone everywhere
 export TZ=America/Los_Angeles
