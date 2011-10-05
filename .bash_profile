@@ -23,22 +23,23 @@ fortune -a
 PS1="\\n\e[1;${COLOR}m\]\u@\h  \e[0m\]\\n$(~/.rvm/bin/rvm-prompt v g s)\\n[\w] "
 
 # use same timezone everywhere
-export TZ=America/Los_Angeles
+TZ=America/Los_Angeles
 
 # color scheme used by 'ls'
-export LSCOLORS=Exgxdxdxbxdxdxaxaxexex
+LSCOLORS=Exgxdxdxbxdxdxaxaxexex
 
 # how many commands to keep in history?
-export HISTSIZE=150
+HISTSIZE=150
 
 # page nicely, please
-export PAGER="less -MW"
-export MANPAGER="less -MW"
+PAGER="less -MW"
+MANPAGER="less -MW"
+
 
 # erase duplicates from history
-export HISTCONTROL=erasedups
-export HISTCONTROL=ignoreboth #for OSs that don't support erasedups
-export HISTIGNORE="&"
+HISTCONTROL=erasedups
+HISTCONTROL=ignoreboth #for OSs that don't support erasedups
+HISTIGNORE="&"
 
 # turn on color for git
 git config --global color.diff auto
@@ -47,27 +48,27 @@ git config --global color.branch auto
 git config --global color.ui auto
 
 # turn on color for ri (ruby documentation viewer)
-export RI=" --format ansi"
+RI=" --format ansi"
 
 # optimize git for multiple cores/CPUs
 git config --global pack.threads 0
 
 # choose different editor than (default) Pico
-export EDITOR='nano'
-export SVN_EDITOR="nano"
+EDITOR='nano'
+SVN_EDITOR="nano"
 
 #don't timeout, please
-export TMOUT=0
+TMOUT=0
 
 #directories for cd to look into for path autocompletions
 #ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
-export CDPATH=.:~:/var/log/httpd
+CDPATH=.:~:/var/log/httpd
 
 #set shell options (-s=set/on -u=unset/off)
 shopt -s cdspell  #forgive minor typos
 shopt -s dotglob #autocomplete paths that start with "."
 shopt -s nocaseglob #case insensitive autocomplete
-shopt -s cdable_vars #use 'export foo=bar' to create a cd-able variable called foo, whose value is bar (i.e shortcut to 'cd bar')
+shopt -s cdable_vars #use 'foo=bar' to create a cd-able variable called foo, whose value is bar (i.e shortcut to 'cd bar')
 shopt -s histappend #retain history across multiple, possibly concurrent, terminal sessions
 
 # aliases
@@ -127,6 +128,8 @@ elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
     source ~/.bashhpux
 fi
 
+
+# "Ensure that RVM is sourced after any path settings as RVM and manipulates the path. If you don't do this, RVM may not work as expected." <http://beginrescueend.com/rvm/install/>
 if [[ -d ~/.rvm/ ]]; then
   source ~/.bashrvm
 fi

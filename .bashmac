@@ -4,25 +4,25 @@ echo "== SOURCED: .bashmac =="
 echo
 
 #required for textMate Bundles repository downloads.  See <http://macromates.com/textmate/manual/bundles#getting_more_bundles>
-export LC_CTYPE=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
 
 # Ruby's path for doing 'require'
-export RUBYLIB=$RUBYLIB:~/bin
+RUBYLIB=$RUBYLIB:~/bin
 
 # required by git-cola
-export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
 # choose a different editor than (default) Pico
-export EDITOR='mate -w'
-export SVN_EDITOR="mate -w"
-export LESSEDIT='mate -l %lm %f'
+EDITOR='mate -w'
+SVN_EDITOR="mate -w"
+LESSEDIT='mate -l %lm %f'
 
 #directories for cd to look into for path autocompletions
 #ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
-export CDPATH=~/Sites:/etc/apache2:/Library:~/Library:$CDPATH
+CDPATH=~/Sites:/etc/apache2:/Library:~/Library:$CDPATH
 
 #variables that 'shopt -s cdable_vars' can expand into convenience paths for cd
-#i.e. export mys='~/Sites/path/to/my_site_or_nuisance_filename'
+#i.e. mys='~/Sites/path/to/my_site_or_nuisance_filename'
 
 #Mac-specific aliases
 alias startvnc="sudo SystemStarter start VNC"
@@ -36,7 +36,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-## only export when we're done doing modifications
+## only when we're done doing modifications
 ## remember these are inverse sort; final addition will be first in $PATH
 PATH=~/.gem/ruby/1.8/bin:$PATH
 PATH=~/.gem/ruby/1.9/bin:$PATH
@@ -45,4 +45,3 @@ PATH=/Developer/Tools:$PATH
 PATH=/usr/libexec:$PATH
 PATH=~/bin:$PATH
 PATH=/usr/local/bin:$PATH #brew req't
-export PATH
