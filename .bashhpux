@@ -1,6 +1,6 @@
 # confirm load
 echo
-echo "== SOURCED: $0 $* $1 $@ =="
+echo "== SOURCED: .bashhpux =="
 echo
 
 alias ls="ls -Alp" # -h and -G flags aren't supported

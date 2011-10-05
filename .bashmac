@@ -1,6 +1,6 @@
 # confirm load
 echo
-echo "== SOURCED: $0 $* $1 $@ =="
+echo "== SOURCED: .bashmac =="
 echo
 
 #required for textMate Bundles repository downloads.  See <http://macromates.com/textmate/manual/bundles#getting_more_bundles>

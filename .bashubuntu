@@ -1,6 +1,6 @@
 # confirm load
 echo
-echo "== SOURCED: $0 $* $1 $@ =="
+echo "== SOURCED: .bashubuntu =="
 echo
 
 # Gnome terminals choke on the "\]" used in .bash_profile_for_all
