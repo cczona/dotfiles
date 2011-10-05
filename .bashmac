@@ -45,5 +45,4 @@ PATH=/Developer/Tools:$PATH
 PATH=/usr/libexec:$PATH
 PATH=~/bin:$PATH
 PATH=/usr/local/bin:$PATH #brew req't
-PATH=.:$PATH
 export PATH
