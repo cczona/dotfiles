@@ -49,7 +49,7 @@ fi
 fortune -a
 
 #custom prompt; $color is set in .bash_profile
-PS1="\\n\e[1;${COLOR}m\]\u@\h  \e[0m\]\\n$(~/.rvm/bin/rvm-prompt i v g s)\\n[\w] "
+PS1="\\n\e[1;${COLOR}m\]\u@\h  \e[0m\]\\n$(~/.rvm/bin/rvm-prompt v g s)\\n[\w] "
 
 # use same timezone everywhere
 export TZ=America/Los_Angeles
