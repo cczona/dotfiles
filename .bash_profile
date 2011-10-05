@@ -14,35 +14,6 @@
 # set Backspace & Delete keys to default functionality
 stty ek
 
-## /REMINDERS ##
-
-##set prompt color
-# 30=>black
-# 31=>red
-# 32=>green
-# 33=>yellow
-# 34=>blue
-# 35=>purple
-# 36=>cyan
-
-COLOR=36 #default
-if [[ $HOSTNAME =~ '.local' ]]; then COLOR=30
-elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=32
-elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=35
-elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=31
-elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=34
-fi
-
-
-## include files; next-to-last so they override defaults set above
-if [[ $OSTYPE =~ 'darwin' ]] && [ -f ~/.bashmac ]; then
-    source ~/.bashmac
-elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]] && [ -f ~/.bashubuntu ]; then
-    source ~/.bashubuntu 
-elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
-    source ~/.bashhpux
-fi
-
 # start each login with a random pithy little something
 # motd == "message of the day"
 # NOTE: -a flag brings in stuff from the databases labeled offensive
@@ -85,10 +56,6 @@ git config --global pack.threads 0
 export EDITOR='nano'
 export SVN_EDITOR="nano"
 
-# Ruby, autoload RubyGems library
-# DISABLED at RVM's strong suggestion 
-#export RUBYOPT=rubygems
-
 #don't timeout, please
 export TMOUT=0
 
@@ -130,3 +97,36 @@ alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
+
+
+## Set prompt color
+# 30=>black
+# 31=>red
+# 32=>green
+# 33=>yellow
+# 34=>blue
+# 35=>purple
+# 36=>cyan
+##
+
+COLOR=36 #default
+if [[ $HOSTNAME =~ '.local' ]]; then COLOR=30
+elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=32
+elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=35
+elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=31
+elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=34
+fi
+
+
+## include files; doing this last to ensure they override defaults set above
+if [[ $OSTYPE =~ 'darwin' ]] && [ -f ~/.bashmac ]; then
+    source ~/.bashmac
+elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]] && [ -f ~/.bashubuntu ]; then
+    source ~/.bashubuntu 
+elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
+    source ~/.bashhpux
+fi
+
+if [[ -d ~/.rvm/ ]]; then
+  source ~/.bashrvm
+fi

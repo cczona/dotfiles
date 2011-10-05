@@ -1,0 +1,10 @@
+# confirm load
+echo
+echo "== SOURCED: .bashrvm =="
+echo
+
+# required by RVM (under OSX 10.7/Lion only)
+#export CC=gcc-4.2
+
+# Enable interactive RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
