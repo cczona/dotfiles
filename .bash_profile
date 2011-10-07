@@ -129,7 +129,7 @@ elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
 fi
 
 
-# "Ensure that RVM is sourced after any path settings as RVM and manipulates the path. If you don't do this, RVM may not work as expected." <http://beginrescueend.com/rvm/install/>
+# "Ensure that RVM is sourced after any path settings as RVM manipulates the path. If you don't do this, RVM may not work as expected." <http://beginrescueend.com/rvm/install/>
 if [[ -d ~/.rvm/ ]]; then
   source ~/.bashrvm
 fi
