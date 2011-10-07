@@ -20,7 +20,7 @@ stty ek
 fortune -a
 
 #custom prompt; $color is set in .bash_profile
-PS1="\\n\e[1;${COLOR}m\]\u@\h \e[${COLOR}m\](\$(~/.rvm/bin/rvm-prompt v g s)) \e[0m\]\\n[\w] "
+PS1="\\n$(tput bold)\e[${COLOR}m\]\u@\h(\$(~/.rvm/bin/rvm-prompt v g s))$(tput sgr0)\\n[\w] "
 
 # use same timezone everywhere
 TZ=America/Los_Angeles
