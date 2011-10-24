@@ -1,14 +1,14 @@
 ## REMINDERS  ##
-# 
-# cd -				switch to last path (or do it repeatedly to switch back and forth between 2 paths)
-# !!					redo the last command
-# sudo !!			redo the last command, but this time sudo it
-# nano +N			(where N is a number)	open the document at that line number, ie. 'nano +200'
-# $						(then double-tab) list environment variables
-# @						(then double-tab) list hostnames
-# ~						(then double-tab) list usernames
-# 
-# man -k term | grep "\([15]\)"				search all manpages for a keyword
+#
+# cd -        switch to last path (or do it repeatedly to switch back and forth between 2 paths)
+# !!          redo the last command
+# sudo !!     redo the last command, but this time sudo it
+# nano +N     (where N is a number) open the document at that line number, ie. 'nano +200'
+# $           (then double-tab) list environment variables
+# @           (then double-tab) list hostnames
+# ~           (then double-tab) list usernames
+#
+# man -k term | grep "\([15]\)"       search all manpages for a keyword
 
 
 # IMPORTANT: 'set -o optionname' == 'enable'; 'set +o optionname' == 'disable
