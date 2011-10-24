@@ -1,9 +1,9 @@
-require 'rubygems'
 require 'irb/completion'
 require 'irb/ext/save-history'
 
 # pretty print
 require 'pp'
+require 'rubygems' unless defined? Gem
 
 # indent blocks etc for easier reading
 IRB.conf[:AUTO_INDENT]=true
