@@ -24,8 +24,26 @@ stty ek
 # NOTE: -a flag brings in stuff from the databases labeled offensive
 #fortune -a
 
-#custom prompt; $color is set in .bash_profile
-PS1="\\n$(tput bold)\e[${COLOR}m\]\u@\h(\$(~/.rvm/bin/rvm-prompt v g s))$(tput sgr0)\\n[\w] "
+#custom prompt
+ BLACK="\e[30m\]"
+   RED="\e[31m\]"
+ GREEN="\e[32m\]"
+YELLOW="\e[33m\]"
+  BLUE="\e[34m\]"
+PURPLE="\e[35m\]"
+  CYAN="\e[36m\]"
+ WHITE="\e[37m\]"
+
+COLOR=$BLACK #default
+if [[ $HOSTNAME =~ '.local' ]]; then COLOR=$BLACK
+elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
+elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=$BLUE
+elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=$GREEN
+elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=$CYAN
+fi
+
+PS1="\\n$COLOR\h\
+$COLOR$(tput bold)\w$(tput sgr0) "
 
 # use same timezone everywhere
 TZ=America/Los_Angeles
@@ -114,15 +132,6 @@ alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 # 35=>purple
 # 36=>cyan
 ##
-
-COLOR=36 #default
-if [[ $HOSTNAME =~ '.local' ]]; then COLOR=30
-elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=32
-elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=35
-elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=31
-elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=34
-fi
-
 
 ## include files; doing this last to ensure they override defaults set above
 if [[ $OSTYPE =~ 'darwin' ]] && [ -f ~/.bashmac ]; then
