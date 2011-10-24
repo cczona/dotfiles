@@ -55,7 +55,7 @@ TZ=America/Los_Angeles
 LSCOLORS=Exgxdxdxbxdxdxaxaxexex
 
 # how many commands to keep in history?
-HISTSIZE=150
+HISTSIZE=5000
 
 # page nicely, please
 PAGER="less -MW"
