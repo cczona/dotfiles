@@ -43,6 +43,8 @@ elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=$CYAN
 fi
 
 PS1="\\n$COLOR\h\
+$COLOR(\$(~/.rvm/bin/rvm-prompt v p g s))\
+\\n\
 $COLOR$(tput bold)\w$(tput sgr0) "
 
 # use same timezone everywhere
