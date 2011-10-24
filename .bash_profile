@@ -43,6 +43,7 @@ elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=$CYAN
 fi
 
 PS1="\\n$COLOR\h\
+$RED$(tput bold)\$(__git_ps1 \"#%s\")$(tput sgr0)\
 $COLOR(\$(~/.rvm/bin/rvm-prompt v p g s))\
 \\n\
 $COLOR$(tput bold)\w$(tput sgr0) "
