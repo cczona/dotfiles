@@ -1,7 +1,5 @@
 require 'irb/completion'
 require 'irb/ext/save-history'
-
-# pretty print
 require 'pp'
 require 'rubygems' unless defined? Gem
 
