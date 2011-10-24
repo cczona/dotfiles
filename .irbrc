@@ -12,6 +12,7 @@ begin; require 'irb/ext/save-history';      rescue LoadError => err; warn "#{err
 begin; require 'pp';                        rescue LoadError => err; warn "#{err}"; end
 begin; require 'wirble';                    Wirble.init; Wirble.colorize; rescue LoadError => err; warn "#{err}"; end
 begin; require 'methodfinder';              rescue LoadError => err; warn "#{err}"; end
+begin; require 'metaid';                    rescue LoadError => err; warn "#{err}"; end
 
 # switch some of the colors used by Wirble
 colors = Wirble::Colorize.colors.merge({
