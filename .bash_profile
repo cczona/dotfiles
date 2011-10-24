@@ -22,7 +22,7 @@ stty ek
 # start each login with a random pithy little something
 # motd == "message of the day"
 # NOTE: -a flag brings in stuff from the databases labeled offensive
-fortune -a
+#fortune -a
 
 #custom prompt; $color is set in .bash_profile
 PS1="\\n$(tput bold)\e[${COLOR}m\]\u@\h(\$(~/.rvm/bin/rvm-prompt v g s))$(tput sgr0)\\n[\w] "
