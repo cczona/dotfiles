@@ -11,6 +11,7 @@ begin; require 'irb/completion';            rescue LoadError => err; warn "#{err
 begin; require 'irb/ext/save-history';      rescue LoadError => err; warn "#{err}"; end
 begin; require 'pp';                        rescue LoadError => err; warn "#{err}"; end
 begin; require 'wirble';                    Wirble.init; Wirble.colorize; rescue LoadError => err; warn "#{err}"; end
+begin; require 'methodfinder';              rescue LoadError => err; warn "#{err}"; end
 
 # switch some of the colors used by Wirble
 colors = Wirble::Colorize.colors.merge({
@@ -22,3 +23,6 @@ colors = Wirble::Colorize.colors.merge({
 Wirble::Colorize.colors = colors
 Wirble.init
 Wirble.colorize
+
+  # MethodFinder.find(someobject, expectedreturnvalue) identifies methods which generate the expectedreturn value when someobject is the receiver.  (See MethodFinder gem documentation for more tricks)
+end
