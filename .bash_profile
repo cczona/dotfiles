@@ -14,6 +14,7 @@
 # IMPORTANT: 'set -o optionname' == 'enable'; 'set +o optionname' == 'disable
 # see 'set -o' on its own to list all current settings
 set -o ignoreeof # exit shell only by using 'exit', not ^D
+set -o emacs # use bindings such as  ^A, ^E, ^W
 
 # set Backspace & Delete keys to default functionality
 stty ek
