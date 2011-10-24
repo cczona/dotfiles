@@ -25,5 +25,24 @@ Wirble::Colorize.colors = colors
 Wirble.init
 Wirble.colorize
 
+# query classes about the methods they contain
+class Object
+  # from <http://stackoverflow.com/posts/873371/revisions>
+  def interesting_methods
+    (self.methods - Object.new.methods).sort
+  end
+
+  def interesting_methods_pp
+    interesting_methods.each {|method| puts method}
+    nil
+  end
+
+  def instance_methods_pp(boolean=true)
+    instance_methods(boolean).each {|method| puts method}
+    nil
+  end
+
+  # NOTE: Ruby's built-in Method class has more useful stuff like this, such as object.method :methodname, which identifies the class in the inheritance chain which defined the method named
+
   # MethodFinder.find(someobject, expectedreturnvalue) identifies methods which generate the expectedreturn value when someobject is the receiver.  (See MethodFinder gem documentation for more tricks)
 end
