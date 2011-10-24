@@ -140,7 +140,7 @@ alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 if [[ $OSTYPE =~ 'darwin' ]] && [ -f ~/.bashmac ]; then
     source ~/.bashmac
 elif [[ $OSTYPE =~ 'ubuntu' || $OSTYPE =~ 'linux' ]] && [ -f ~/.bashubuntu ]; then
-    source ~/.bashubuntu 
+    source ~/.bashubuntu
 elif [[ $OSTYPE =~ 'hpux' ]] && [ -f ~/.bashhpux]; then
     source ~/.bashhpux
 fi
