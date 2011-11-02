@@ -8,7 +8,7 @@ setterm -foreground black -bold -background white -store
 
 #directly call files within these paths ie. "'cd grub' instead of 'cd /boot/grub'"
 #NOTE: bash doesn't autocomplete the paths, though an install/config of bash-completion might be able to make that happen
-export CDPATH=~:/etc/network:/etc/httpd:/boot/grub:$CDPATH
+export CDPATH=$CDPATH:/boot/grub
 
 #alias CALL_AS_THIS='instead of this'
 alias update="sudo aptitude update"

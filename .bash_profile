@@ -86,10 +86,6 @@ SVN_EDITOR="nano"
 #don't timeout, please
 TMOUT=0
 
-#directories for cd to look into for path autocompletions
-#ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
-CDPATH=.:~:/var/log/httpd
-
 #set shell options (-s=set/on -u=unset/off)
 shopt -s cdspell  #forgive minor typos
 shopt -s dotglob #autocomplete paths that start with "."
@@ -150,3 +146,8 @@ fi
 if [[ -d ~/.rvm/ ]]; then
   source ~/.bashrvm
 fi
+
+#directories for cd to look into for path autocompletions
+#ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
+CDPATH=$CDPATH:/var/log/httpd:/etc/apache2:/etc/httpd
+CDPATH=.:~:$CDPATH

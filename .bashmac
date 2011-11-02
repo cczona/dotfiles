@@ -19,7 +19,7 @@ LESSEDIT='mate -l %lm %f'
 
 #directories for cd to look into for path autocompletions
 #ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
-CDPATH=~/Sites:/etc/apache2:/Library:~/Library:$CDPATH
+CDPATH=~/Homework:~/eBooks:~/Sites:~/Library:/Library:$CDPATH
 
 #variables that 'shopt -s cdable_vars' can expand into convenience paths for cd
 #i.e. mys='~/Sites/path/to/my_site_or_nuisance_filename'
