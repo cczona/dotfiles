@@ -60,7 +60,6 @@
 .sh_history
 .smb
 .spumux
-.sqlite_history
 .ssh/*
 .ssh/known_hosts
 .subversion
