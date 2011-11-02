@@ -1,0 +1,6 @@
+# YAML format
+# can override by placing a "*.reek" file anywhere lower in the tested file's absolute path
+# see https://github.com/kevinrutherford/reek/blob/master/config/defaults.reek for example
+
+Attribute: 
+  enabled: true
