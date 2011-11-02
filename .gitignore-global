@@ -16,7 +16,10 @@
 .dropbox
 .DS_Store
 .dvdcss
+**/.DS_STORE
 .fastri-fulltext
+.subversion/
+.subversion_IDEA
 .fastri-index
 .fontconfig
 .forward
