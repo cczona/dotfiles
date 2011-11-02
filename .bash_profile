@@ -121,6 +121,8 @@ alias ru="rvm use"
 alias ru1="rvm use 1.9.1"
 alias ru2="rvm use 1.9.2"
 alias ru3="rvm use 1.9.3"
+alias rgu="rvm gemset use"
+alias rgl="rvm gemset list"
 
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
