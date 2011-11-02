@@ -13,7 +13,7 @@ RUBYLIB=$RUBYLIB:~/bin
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
 # choose a different editor than (default) Pico
-EDITOR='mate -w'
+export EDITOR='mate -w'
 SVN_EDITOR="mate -w"
 LESSEDIT='mate -l %lm %f'
 
