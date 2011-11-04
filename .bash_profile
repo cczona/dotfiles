@@ -42,11 +42,12 @@ elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=$GREEN
 elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=$CYAN
 fi
 
+# shell prompt with RVM and Git info
 PS1="\\n$COLOR\h\
-$RED$(tput bold)\$(__git_ps1 \"#%s\")$(tput sgr0)\
+$RED\$(__git_ps1 \"#%s\")$(tput sgr0)\
 $COLOR(\$(~/.rvm/bin/rvm-prompt v p g s))\
 \\n\
-$COLOR$(tput bold)\w$(tput sgr0) "
+[\w] "
 
 # use same timezone everywhere
 TZ=America/Los_Angeles
