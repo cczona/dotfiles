@@ -48,13 +48,10 @@
 [mergetool]
   prompt = false
   keepBackup = false
-[mergetool "diffmerge"]
-  path = /usr/bin/diffmerge
-	cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-	trustexitcode = false
+[mergetool]
+  tool = opendiff
 [diff]
-	tool = diffmerge
-  prompt = false
+	tool = opendiff
 [difftool]
   prompt = false
   keepBackup = false
