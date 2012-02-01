@@ -9,6 +9,9 @@ LC_CTYPE=en_US.UTF-8
 # Ruby's path for doing 'require'
 RUBYLIB=$RUBYLIB:~/bin
 
+# workaround the gcc problems with XCode 4.2/4.2.1
+export CC=/usr/bin/gcc-4.2
+
 # required by git-cola
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
