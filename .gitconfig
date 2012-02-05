@@ -43,7 +43,7 @@
 	unstage = reset HEAD
 	re = remote -v
 [merge]
-  tool = diffmerge
+  tool = opendiff
   summary = true
 [mergetool]
   prompt = false
