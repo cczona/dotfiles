@@ -1,11 +1,33 @@
 --- 
-:update_sources: true
-:bulk_threshold: 1000
+
+# SEE 'gem help environment'
+# for configuring RubyGems
+
 :sources: 
 - http://rubygems.org
 - http://gems.rubyforge.org/
 - http://gems.github.com
-gem: --gen-rdoc --run-tests
 :verbose: true
 :backtrace: false
-:benchmark: false
+:update_sources: true
+
+
+# SEE: http://docs.rubygems.org/read/chapter/11
+# for passing arguments to gem commands
+
+# run unit tests with any gem command
+gem: --run-tests
+
+# run all gem commands against local (only)
+gem: --local
+
+# except, run gem search against remote (only)
+search: --remote
+
+# show the gem's path, description, and other meta when doing gem list
+list: --details
+
+# when (only) installing or updating, skip documentation
+# NOTE: applying this setting to all gem commands may break things
+install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
