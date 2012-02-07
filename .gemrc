@@ -15,6 +15,16 @@
 # SEE: http://docs.rubygems.org/read/chapter/11
 # for passing arguments to gem commands
 
+# "gem install rubygems-test" adds a "gem test" command
+#  configuration options for gem test:
+test_options:
+   auto_test_on_install: false
+   test_on_install: false
+   install_development_dependencies: true
+   test_development_dependencies: true
+   upload_results: true
+   force_install: false
+   force_uninstall_on_failure: false
 
 # run gem [command] against local|remote|both
 search: --remote
