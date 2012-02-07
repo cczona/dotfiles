@@ -7,7 +7,7 @@
 - http://rubygems.org
 - http://gems.rubyforge.org/
 - http://gems.github.com
-:verbose: true
+:verbose: false
 :backtrace: false
 :update_sources: true
 
