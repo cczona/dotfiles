@@ -15,9 +15,6 @@
 # SEE: http://docs.rubygems.org/read/chapter/11
 # for passing arguments to gem commands
 
-# run unit tests with any gem command
-gem: --run-tests
-
 
 # run gem [command] against local|remote|both
 search: --remote
