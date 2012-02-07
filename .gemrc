@@ -18,11 +18,11 @@
 # run unit tests with any gem command
 gem: --run-tests
 
-# run all gem commands against local (only)
-gem: --local
 
-# except, run gem search against remote (only)
+# run gem [command] against local|remote|both
 search: --remote
+install: --remote
+uninstall: --remote
 
 # show the gem's path, description, and other meta when doing gem list
 list: --details
