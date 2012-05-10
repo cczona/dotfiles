@@ -25,7 +25,7 @@
 [alias]
 	ap = add --patch
 	st = status
-	ci = commit --cleanup=whitespace -m
+	ci = commit  -v --cleanup=whitespace -m
 	co = checkout
 	br = branch -vv
 	bra = branch -vv -a
