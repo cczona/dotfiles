@@ -43,7 +43,8 @@
 	l = "log --stat --pretty=\"%n%C(blue bold)%s%C(reset)%n%h %C(bold)[%cr]%C(reset) %d\""
 	unstage = reset HEAD
 	re = remote -v
-	ls = ls-tree -r --name-only #NOTE needs something treeish, a commit ref like git ls HEAD or git ls master
+	ls  = ls-tree -r --name-only #NOTE needs something treeish, a commit ref like git ls HEAD or git ls master
+	lsr = ls-tree -r --name-only --full-tree # lists all contents of treeish, instead of those just relative to your location
 [merge]
   tool = opendiff
   summary = true
