@@ -1,6 +1,6 @@
 [gc]
-        reflogExpire = 180 days
-        reflogexpireUnreachable = 90 days
+  reflogExpire = 180 days
+  reflogexpireUnreachable = 90 days
 [color]
 	diff = auto
 	status = auto
