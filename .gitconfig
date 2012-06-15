@@ -64,3 +64,5 @@
   gitx-path = /Applications/GitX.app
 [branch]
 	autosetuprebase = always # pull using rebase instead of merge
+[rerere]
+	enabled = true
