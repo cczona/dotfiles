@@ -1,9 +1,10 @@
-.gem/
+**/.DS_STORE
 *.gemspec
 *.postflight.*
 *.pub
 *_dsa
 *_rsa
+.*history
 .addressbook
 .addressbook.lu
 .adobe
@@ -16,10 +17,7 @@
 .dropbox
 .DS_Store
 .dvdcss
-**/.DS_STORE
 .fastri-fulltext
-.subversion/
-.subversion_IDEA
 .fastri-index
 .fontconfig
 .forward
@@ -28,6 +26,7 @@
 .gconf
 .gconfd
 .gem-outdated
+.gem/
 .gitk
 .gnome2
 .Guardfile
@@ -40,6 +39,7 @@
 .MacOSX
 .MCXLC
 .mplayer
+.netrc
 .parallels
 .parallels_settings
 .PermissionsScript
@@ -51,6 +51,7 @@
 .profile.pysave
 .psi
 .qt
+.rails/plugin_source_cache.yml
 .rdebug_hist
 .RebootScript
 .recently-used
@@ -63,6 +64,8 @@
 .ssh/*
 .ssh/known_hosts
 .subversion
+.subversion/
+.subversion_IDEA
 .sversionrc
 .svk
 .tchshrc
@@ -78,5 +81,3 @@
 .Xdefaults
 .xftcache
 ._text_tm.cc
-.*history
-.rails/plugin_source_cache.yml
