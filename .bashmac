@@ -36,6 +36,7 @@ fi
 
 ## only when we're done doing modifications
 ## remember these are inverse sort; final addition will be first in $PATH
+PATH=/usr/local/share/python:$PATH
 PATH=~/.gem/ruby/1.8/bin:$PATH
 PATH=~/.gem/ruby/1.9/bin:$PATH
 PATH=/Library/PEAR/bin:$PATH
