@@ -34,9 +34,13 @@
 	di  = diff --word-diff=color
 	dil = diff
 	dt = difftool
-	l = "log --stat --pretty=\"%n%C(blue bold)%s%C(reset)%n%h %C(bold)[%cr]%C(reset) %d\""
-	logf = "log --stat --pretty=fuller --decorate --graph"
-	logs = "log --oneline --decorate"
+  # l = "log --pretty=format:'%h [%C(yellow)%cr%Creset] %s %C(blue bold)%d%Creset' --abbrev-commit --decorate --date=relative --graph --all --branches --tags --remotes --full-history"
+  # ll = "log --pretty=format:\"%n%C(blue bold)%s%C(reset)%n%h %C(bold)[%cr]%C(reset)%n%d\" --decorate --relative"
+
+	l   = "log --pretty=oneline --decorate --all --tags --branches --remotes --graph --full-history --abbrev-commit"
+	ll  = "log --pretty=short   --decorate --all --tags --branches --remotes --graph --full-history --abbrev-commit --stat"
+	lll = "log --pretty=medium  --decorate --all --tags --branches --remotes --graph --full-history --stat"
+
 	ls  = ls-tree -r --name-only #NOTE needs something treeish, a commit ref like git ls HEAD or git ls master
 	lsr = ls-tree -r --name-only --full-tree # lists all contents of treeish, instead of those just relative to your location
 	mt = mergetool
