@@ -37,9 +37,6 @@ PURPLE="\e[35m"
 COLOR=$BLACK #default
 if [[ $HOSTNAME =~ '.local' ]]; then COLOR=$BLACK
 elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
-elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=$BLUE
-elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=$GREEN
-elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=$CYAN
 fi
 
 # shell prompt with RVM and Git info
