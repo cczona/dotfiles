@@ -125,6 +125,11 @@ alias ru3="rvm use 1.9.3"
 alias rgu="rvm gemset use"
 alias rgl="rvm gemset list"
 
+alias b="bundle"
+alias g="git"
+alias h="heroku"
+alias r="rvm"
+
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
 
