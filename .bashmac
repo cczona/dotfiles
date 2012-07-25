@@ -43,4 +43,5 @@ PATH=/Library/PEAR/bin:$PATH
 PATH=/Developer/Tools:$PATH
 PATH=/usr/libexec:$PATH
 PATH=~/bin:$PATH
+PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH #brew req't
