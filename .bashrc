@@ -115,12 +115,6 @@ alias rmrec="rm -r"
 alias rpg="pwgen -Bcnsy1 18"
 alias scp="scp -r"
 alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
-alias ru="rvm use"
-alias ru1="rvm use 1.9.1"
-alias ru2="rvm use 1.9.2"
-alias ru3="rvm use 1.9.3"
-alias rgu="rvm gemset use"
-alias rgl="rvm gemset list"
 
 alias b="bundle"
 alias be="bundle exec"
@@ -130,6 +124,14 @@ alias g="git"
 alias h="heroku"
 
 alias r="rvm"
+alias rg="rvm gemset"
+alias rgc="rvm gemset create"
+alias rgl="rvm gemset list"
+alias rgu="rvm gemset use"
+alias ru="rvm use"
+alias ru1="rvm use 1.9.1"
+alias ru2="rvm use 1.9.2"
+alias ru3="rvm use 1.9.3"
 
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
