@@ -123,8 +123,12 @@ alias rgu="rvm gemset use"
 alias rgl="rvm gemset list"
 
 alias b="bundle"
+alias be="bundle exec"
+
 alias g="git"
+
 alias h="heroku"
+
 alias r="rvm"
 
 
