@@ -39,11 +39,18 @@ if [[ $HOSTNAME =~ '.local' ]]; then COLOR=$BLACK
 elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
 fi
 
+function git_dirty {
+  git status -sb  2>/dev/null | sed /^#/d | wc -l | tr -d ' '
+}
+
 # shell prompt with RVM and Git info
-PS1="\\n=$COLOR\h\
-$RED \$(__git_ps1 \"#%s\")$(tput sgr0)\
-$COLOR (\$(~/.rvm/bin/rvm-prompt v p g s)) \$(git rev-parse --show-toplevel)\n\
-\$(git status -s 2> /dev/null && echo \\n)\n\
+PS1="\\n$COLOR\
+$PURPLE\$(git_dirty)\
+ $YELLOW\$(__git_ps1 \"#%s\")\
+$COLOR\
+ \$(git rev-parse --show-toplevel)\
+ \$(~/.rvm/bin/rvm-prompt v p g s)\
+\\n\
 [\w] "
 
 # use same timezone everywhere
