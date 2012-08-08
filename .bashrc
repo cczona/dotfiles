@@ -40,10 +40,10 @@ elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
 fi
 
 # shell prompt with RVM and Git info
-PS1="\\n$COLOR\h\
-$RED\$(__git_ps1 \"#%s\")$(tput sgr0)\
-$COLOR(\$(~/.rvm/bin/rvm-prompt v p g s))\
-\\n\
+PS1="\\n=$COLOR\h\
+$RED \$(__git_ps1 \"#%s\")$(tput sgr0)\
+$COLOR (\$(~/.rvm/bin/rvm-prompt v p g s)) \$(git rev-parse --show-toplevel)\n\
+\$(git status -s 2> /dev/null && echo \\n)\n\
 [\w] "
 
 # use same timezone everywhere
