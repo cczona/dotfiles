@@ -120,6 +120,8 @@ alias b="bundle"
 alias be="bundle exec"
 
 alias g="git"
+alias gf="git flow"
+alias gff="git flow feature"
 
 alias h="heroku"
 
