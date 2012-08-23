@@ -40,16 +40,22 @@ elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
 fi
 
 function git_dirty {
-  git status -sb  2>/dev/null | sed /^#/d | wc -l | tr -d ' '
+  git status -s  2>/dev/null | sed /^#/d | wc -l | tr -d ' '
+}
+
+function git_repo {
+  git rev-parse --show-toplevel
 }
 
 # shell prompt with RVM and Git info
-PS1="\\n$COLOR\
-$PURPLE\$(git_dirty)\
- $YELLOW\$(__git_ps1 \"#%s\")\
-$COLOR\
- \$(git rev-parse --show-toplevel)\
- \$(~/.rvm/bin/rvm-prompt v p g s)\
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+PS1="\\n\\n\
+$PURPLE\$(git_dirty) \
+$YELLOW\$(__git_ps1 \"#%s\")\
+$COLOR \
+\$(git_repo) \
+\$(~/.rvm/bin/rvm-prompt v p g s)\
 \\n\
 [\w] "
 
