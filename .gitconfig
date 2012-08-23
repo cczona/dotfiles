@@ -50,6 +50,8 @@
 	re = remote -v
 	st = status
 	unstage = reset HEAD
+[status]
+  color = true
 [merge]
   tool = opendiff
   summary = true
