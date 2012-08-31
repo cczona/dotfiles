@@ -50,14 +50,19 @@ function git_repo {
 # shell prompt with RVM and Git info
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
-PS1="\\n\\n\
-$PURPLE\$(git_dirty) \
-$YELLOW\$(__git_ps1 \"#%s\")\
-$COLOR \
+PS1="\
+\\n\\n\
+$PURPLE\
+$CYAN\
+\$(git_dirty) \
+$YELLOW\
 \$(git_repo) \
+\$(__git_ps1 \"#%s\") \
+$BLACK \
 \$(~/.rvm/bin/rvm-prompt v p g s)\
 \\n\
-[\w] "
+[\w] \
+"
 
 # use same timezone everywhere
 TZ=America/Los_Angeles
