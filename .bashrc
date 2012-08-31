@@ -44,7 +44,7 @@ function git_dirty {
 }
 
 function git_repo {
-  git rev-parse --show-toplevel
+  basename $(git rev-parse --show-toplevel)
 }
 
 # shell prompt with RVM and Git info
