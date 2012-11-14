@@ -46,3 +46,14 @@ class Object
 
   # MethodFinder.find(someobject, expectedreturnvalue) identifies methods which generate the expectedreturn value when someobject is the receiver.  (See MethodFinder gem documentation for more tricks)
 end
+
+
+# colorize return values & format them much more clearly than p/pp
+require 'ap'
+module IRB
+  class Irb
+    def output_value
+      ap @context.last_value
+    end
+  end
+end
