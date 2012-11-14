@@ -134,6 +134,8 @@ alias rpg="pwgen -Bcnsy1 18"
 alias scp="scp -r"
 alias top="top -ocpu -O+rsize -s 5" # -t flag is not cross-platform
 
+alias rakeT="((rake -P | grep rake) && rake -T) | sort"
+
 alias b="bundle"
 alias be="bundle exec"
 
