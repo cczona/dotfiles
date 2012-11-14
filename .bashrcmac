@@ -34,6 +34,11 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+# do automatic weighted completions too
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
+
 ## only when we're done doing modifications
 ## remember these are inverse sort; final addition will be first in $PATH
 PATH=/usr/local/share/python:$PATH
