@@ -37,12 +37,13 @@ PURPLE="\e[35m"
 COLOR=$BLACK #default
 if [[ $HOSTNAME =~ '.local' ]]; then COLOR=$BLACK
 elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
-elif [[ $HOSTNAME =~ 'ccsf.edu' ]]; then COLOR=$BLUE
-elif [[ $HOSTNAME =~ 'santarosa.edu' ]]; then COLOR=$GREEN
-elif [[ $HOSTNAME =~ 'csmcis.com' ]]; then COLOR=$CYAN
 fi
 
+<<<<<<< HEAD
 # TEMPORARY FIX for history scrollback bug
+=======
+# shell prompt with RVM and Git info
+>>>>>>> 716e8e1c07a8a658d861d817c6c7915c2ebd6ded
 PS1="\\n$COLOR\h\
 $RED\$(__git_ps1 \"#%s\")$(tput sgr0)\
 $COLOR(\$(~/.rvm/bin/rvm-prompt v p g s))\
@@ -124,6 +125,11 @@ alias ru2="rvm use 1.9.2"
 alias ru3="rvm use 1.9.3"
 alias rgu="rvm gemset use"
 alias rgl="rvm gemset list"
+
+alias b="bundle"
+alias g="git"
+alias h="heroku"
+alias r="rvm"
 
 
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
