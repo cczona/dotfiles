@@ -34,6 +34,8 @@
 	l   = "log --pretty=oneline --decorate --all --tags --branches --remotes --graph --full-history --abbrev-commit"
 	ll  = "log --pretty=short   --decorate --all --tags --branches --remotes --graph --full-history --abbrev-commit --stat"
 	lll = "log --pretty=medium  --decorate --all --tags --branches --remotes --graph --full-history --stat"
+	logf = "log --stat --pretty=fuller --decorate --graph"
+	logs = "log --oneline --decorate"
 	ls  = ls-tree -r --name-only #NOTE needs something treeish, a commit ref like git ls HEAD or git ls master
 	lsr = ls-tree -r --name-only --full-tree # lists all contents of treeish, instead of those just relative to your location
 	mt = mergetool
@@ -45,6 +47,7 @@
 	unstage = reset HEAD
 [status]
   color = true
+	unstage = reset HEAD
 [merge]
   tool = opendiff
   summary = true
@@ -64,12 +67,6 @@
   gitx-path = /Applications/GitX.app
 [rerere]
 	enabled = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [branch]
 	autosetuprebase = always # pull using rebase instead of merge
 [push]
