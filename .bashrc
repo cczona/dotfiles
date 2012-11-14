@@ -139,6 +139,7 @@ alias rakeT="((rake -P | grep rake) && rake -T) | sort"
 alias b="bundle"
 alias be="bundle exec"
 
+complete -o default -o nospace -F _git g # enable autocompletions to work on "g" alias
 alias g="git"
 alias gf="git flow"
 alias gff="git flow feature"
