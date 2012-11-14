@@ -51,6 +51,8 @@ PATH=/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
 PATH=~/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH #brew req't
+export PATH
+
 
 # override OSX's annoying habit of (re-)hiding ~/Library
 chflags nohidden ~/Library
