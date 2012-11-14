@@ -31,6 +31,7 @@
 .MacOSX/
 .MCXLC
 .mplayer/
+.npm
 .PermissionsScript
 .pip
 .powerupdate.user.properties
