@@ -15,10 +15,6 @@
 [pack]
 	threads = 0
 [core]
-# NOTE: this is the source of "sh: -+: invalid option" for git log, git diff, git show!
-#	pager = -+$LESS -FRX
-	whitespace = trailing-space, space-before-tab, \
-	            -blank-at-eol, -space-before-tab, -indent-with-non-tab, -tab-in-indent, -blank-at-eof, -cr-at-eol
 	excludesfile = ~/.gitignore-global
 # NOTE: git already calls the environment variable $EDITOR, a reliably platform-independent method. Stick with it.
 #       editor = $EDITOR
@@ -35,13 +31,9 @@
 	di  = diff --word-diff=color
 	dil = diff
 	dt = difftool
-  # l = "log --pretty=format:'%h [%C(yellow)%cr%Creset] %s %C(blue bold)%d%Creset' --abbrev-commit --decorate --date=relative --graph --all --branches --tags --remotes --full-history"
-  # ll = "log --pretty=format:\"%n%C(blue bold)%s%C(reset)%n%h %C(bold)[%cr]%C(reset)%n%d\" --decorate --relative"
-
 	l   = "log --pretty=oneline --decorate --all --tags --branches --remotes --graph --full-history --abbrev-commit"
 	ll  = "log --pretty=short   --decorate --all --tags --branches --remotes --graph --full-history --abbrev-commit --stat"
 	lll = "log --pretty=medium  --decorate --all --tags --branches --remotes --graph --full-history --stat"
-
 	ls  = ls-tree -r --name-only #NOTE needs something treeish, a commit ref like git ls HEAD or git ls master
 	lsr = ls-tree -r --name-only --full-tree # lists all contents of treeish, instead of those just relative to your location
 	mt = mergetool
@@ -49,6 +41,7 @@
 	pu = pull
 	re = remote -v
 	st = status
+	stashu = stash --include-untracked
 	unstage = reset HEAD
 [status]
   color = true
@@ -69,8 +62,6 @@
 	cmd = diffmerge "$LOCAL" "$REMOTE"
 [git-tmbundle]
   gitx-path = /Applications/GitX.app
-[branch]
-	autosetuprebase = always # pull using rebase instead of merge
 [rerere]
 	enabled = true
 [difftool "sourcetree"]
@@ -79,3 +70,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[branch]
+	autosetuprebase = always # pull using rebase instead of merge
+[push]
+	default = simple
