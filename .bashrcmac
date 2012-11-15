@@ -39,6 +39,11 @@ if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
 
+# do GitHub 'hub' command autocompletion if possible
+if [ -f `brew --prefix`/bash_completion.d/hub.bash_completion.sh ]; then
+  . `brew --prefix`/bash_completion.d/hub.bash_completion.sh
+fi
+
 ## only when we're done doing modifications
 ## remember these are inverse sort; final addition will be first in $PATH
 PATH=/usr/local/share/python:$PATH
