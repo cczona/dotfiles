@@ -49,7 +49,7 @@ end
 
 
 # colorize return values & format them much more clearly than p/pp
-require 'ap'
+require 'awesome_print'
 module IRB
   class Irb
     def output_value
