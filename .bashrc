@@ -64,6 +64,9 @@ $BLACK \
 [\w] \
 "
 
+# secondary (continuation) prompt
+PS2="⇲ "
+
 # use GitHub's 'hub', aliased to 'git' so that 'git <blah>' calls 'hub <blah>' as necessary
 if [ `command -v hub` ]; then
   eval "$(hub alias -s)"
