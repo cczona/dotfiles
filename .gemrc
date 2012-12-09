@@ -36,5 +36,5 @@ list: --details
 
 # when (only) installing or updating, skip documentation
 # NOTE: applying this setting to all gem commands may break things
-install: --no-rdoc --no-ri
-update: --no-rdoc --no-ri
+install: --no-rdoc
+update: --no-rdoc
