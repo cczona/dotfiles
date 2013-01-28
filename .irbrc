@@ -1,6 +1,21 @@
 require 'rubygems' unless defined? Gem
 
+# colorize return values & format them much more clearly than p/pp
+begin
+  require 'awesome_print'
+  module IRB
+    class Irb
+      def output_value
+        ap @context.last_value
+      end
+    end
+  end
+rescue LoadError => err
+  warn "#{err}"
+end
+
 # Custom prompt. Based on <https://gist.github.com/4652812> by Zachary Scott
+# NOTE: when AwesomePrint is active, it ignores :RETURN setting
 IRB.conf[:PROMPT][:PERSONAL] = IRB.conf[:PROMPT][:RVM].merge(
   :PROMPT_I =>    "\n#{RUBY_VERSION} >> ",
   :PROMPT_S =>    "%l >> ",
@@ -55,12 +70,4 @@ class Object
 end
 
 
-# colorize return values & format them much more clearly than p/pp
-require 'awesome_print'
-module IRB
-  class Irb
-    def output_value
-      ap @context.last_value
-    end
-  end
-end
+
