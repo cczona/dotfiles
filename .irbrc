@@ -1,9 +1,16 @@
 require 'rubygems' unless defined? Gem
 
-# indent blocks etc for easier reading
-IRB.conf[:AUTO_INDENT]=true
+# Custom prompt. Based on <https://gist.github.com/4652812> by Zachary Scott
+IRB.conf[:PROMPT][:PERSONAL] = IRB.conf[:PROMPT][:RVM].merge(
+  :PROMPT_I =>    "\n#{RUBY_VERSION} >> ",
+  :PROMPT_S =>    "%l >> ",
+  :PROMPT_C =>    "? >> ",
+  :RETURN   =>    "RETURNS> %s\n\n"
+)
+IRB.conf[:PROMPT_MODE] = :PERSONAL
 
-ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+
+IRB.conf[:PROMPT][:AUTO_INDENT]=true
 IRB.conf[:SAVE_HISTORY] = 100
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
 
