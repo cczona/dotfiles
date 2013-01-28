@@ -41,7 +41,6 @@ IRB.conf[:PROMPT_MODE] = :PERSONAL
 
 begin; require 'irb/completion';            rescue LoadError => err; warn "#{err}"; end
 begin; require 'irb/ext/save-history';      rescue LoadError => err; warn "#{err}"; end
-begin; require 'pp';                        rescue LoadError => err; warn "#{err}"; end
 # begin; require 'methodfinder';              rescue LoadError => err; warn "#{err}"; end
 # begin; require 'metaid';                    rescue LoadError => err; warn "#{err}"; end
 
