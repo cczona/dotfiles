@@ -1,0 +1,2 @@
+# Takes any valid argument for `rails new`.  See `rails new --help` for options
+--skip-test-unit
