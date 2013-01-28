@@ -39,8 +39,14 @@ if [[ $HOSTNAME =~ '.local' ]]; then COLOR=$BLACK
 elif [[ $HOSTNAME =~ 'joyent.us' ]]; then COLOR=$PURPLE
 fi
 
+source ~/.git_prompt_additions
+
 function git_dirty {
   git status -s  2>/dev/null | sed /^#/d | wc -l | tr -d ' '
+}
+
+function git_branch_name {
+  git branch| grep "^\* "| cut -f 2-100 -d ' '
 }
 
 function git_repo {
@@ -50,14 +56,17 @@ function git_repo {
 # shell prompt with RVM and Git info
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_DESCRIBE_STYLE=true
 PS1="\
 \\n\\n\
-$PURPLE\
-$CYAN\
-\$(git_dirty) \
 $YELLOW\
 \$(git_repo) \
-\$(__git_ps1 \"#%s\") \
+#\
+\$(git_branch_name) \
+$CYAN\
+\$(git_dirty) \
+\$(git_ps1ccz) \
 $BLACK \
 \$(~/.rvm/bin/rvm-prompt v p g s)\
 \\n\
