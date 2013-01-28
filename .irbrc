@@ -22,30 +22,29 @@ IRB.conf[:PROMPT][:PERSONAL] = IRB.conf[:PROMPT][:RVM].merge(
   :PROMPT_C =>    "? >> ",
   :RETURN   =>    "RETURNS> %s\n\n"
 )
-IRB.conf[:PROMPT_MODE] = :PERSONAL
 
 
 IRB.conf[:PROMPT][:AUTO_INDENT]=true
 IRB.conf[:SAVE_HISTORY] = 100
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
 
+# further supplements to AwesomePrint and my custom prompt
+begin; require 'brice';                     rescue LoadError => err; warn "#{err}"; end
+Brice.init { |config |
+  config.include 'colours', 'rails'
+  config.exclude 'added_methods', 'prompt'
+}
+
+# final decision...
+IRB.conf[:PROMPT_MODE] = :PERSONAL
+
+
 begin; require 'irb/completion';            rescue LoadError => err; warn "#{err}"; end
 begin; require 'irb/ext/save-history';      rescue LoadError => err; warn "#{err}"; end
 begin; require 'pp';                        rescue LoadError => err; warn "#{err}"; end
-# begin; require 'wirble';                    Wirble.init; Wirble.colorize; rescue LoadError => err; warn "#{err}"; end
 # begin; require 'methodfinder';              rescue LoadError => err; warn "#{err}"; end
 # begin; require 'metaid';                    rescue LoadError => err; warn "#{err}"; end
 
-# switch some of the colors used by Wirble
-# colors = Wirble::Colorize.colors.merge({
-#   :object_class => :light_purple,
-#   :class        => :dark_gray,
-#   :symbol       => :red,
-#   :symbol_prefix=> :blue,
-# })
-# Wirble::Colorize.colors = colors
-# Wirble.init
-# Wirble.colorize
 
 # query classes about the methods they contain
 class Object
