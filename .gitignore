@@ -60,6 +60,8 @@
 .Trash/
 .trc
 .user60.rdb
+.vim/*/*.swp
+.Vimball.swp
 .WHCC/
 .Xauthority
 .Xdefaults
