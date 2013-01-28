@@ -70,6 +70,6 @@
 [rerere]
 	enabled = true
 [branch]
-	autosetuprebase = always # pull using rebase instead of merge
+  # autosetuprebase = always # pull using rebase instead of merge
 [push]
 	default = current
