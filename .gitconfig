@@ -20,7 +20,6 @@
 #       editor = $EDITOR
 	quotepath = false
 [alias]
-	ap = add --patch
 	bl= branch -al
 	br = branch -vv
 	bra = branch -vv -a
@@ -51,7 +50,6 @@
 	unstage = reset HEAD
 [status]
   color = true
-	unstage = reset HEAD
 [merge]
   tool = opendiff
   summary = true
