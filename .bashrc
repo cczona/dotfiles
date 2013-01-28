@@ -165,6 +165,9 @@ alias ru2="rvm use 1.9.2"
 alias ru3="rvm use 1.9.3"
 alias ri="ri -i"
 
+# add to Git aliases
+eval "$(hub alias -s)"
+
 # NOTE: see also http://www.markhneedham.com/blog/2008/10/15/browsing-around-the-unix-shell-more-easily/
 
 
