@@ -24,7 +24,10 @@
 	bl= branch -al
 	br = branch -vv
 	bra = branch -vv -a
-	ci = commit  -v --cleanup=whitespace -m
+	c =  commit --cleanup=whitespace -m
+	ci =  commit --cleanup=whitespace -m
+	ca = commit --cleanup=whitespace --amend
+	cia = commit --cleanup=whitespace --amend
 	co = checkout
 	dc  = diff --cached  --word-diff=color
 	dcl = diff --cached
@@ -43,6 +46,7 @@
 	pu = pull
 	re = remote -v
 	st = status
+	stasha = stash --include-untracked
 	stashu = stash --include-untracked
 	unstage = reset HEAD
 [status]
