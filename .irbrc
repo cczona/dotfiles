@@ -57,10 +57,10 @@ class Object
     nil
   end
 
-  def instance_methods_pp(boolean=true)
-    instance_methods(boolean).each {|method| puts method}
-    nil
-  end
+  # def instance_methods_pp(boolean=true)
+  #   instance_methods(boolean).each {|method| puts method}
+  #   nil
+  # end
 
   # NOTE: Ruby's built-in Method class has more useful stuff like this, such as object.method :methodname, which identifies the class in the inheritance chain which defined the method named
 
