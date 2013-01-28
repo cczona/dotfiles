@@ -167,6 +167,9 @@ alias ri="ri -i"
 
 alias m="mate"
 
+alias rdb="RAILS_ENV=development bundle exec rake db:drop db:migrate db:seed"
+alias rdbt="RAILS_ENV=test         bundle exec rake db:drop db:migrate db:seed"
+
 # add to Git aliases
 eval "$(hub alias -s)"
 
