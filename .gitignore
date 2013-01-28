@@ -23,6 +23,7 @@
 .gitk
 .gnome2/
 .Guardfile
+.heroku
 .irb-history
 .irb-save-history
 .irb_history
