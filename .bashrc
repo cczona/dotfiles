@@ -174,7 +174,9 @@ alias ru2="rvm use 1.9.2"
 alias ru3="rvm use 1.9.3"
 alias ri="ri -i"
 
-alias m="mate"
+alias m="subl"
+alias s="subl"
+alias mate="subl"
 
 alias rdb="RAILS_ENV=development bundle exec rake db:drop db:migrate db:seed"
 alias rdbt="RAILS_ENV=test         bundle exec rake db:drop db:migrate db:seed"

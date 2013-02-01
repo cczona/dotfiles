@@ -11,9 +11,9 @@ export CC=/usr/bin/gcc-4.2
 PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
 # choose a different editor than (default) Pico
-export EDITOR='mate -w'
-SVN_EDITOR="mate -w"
-LESSEDIT='mate -l %lm %f'
+export EDITOR='subl'
+# SVN_EDITOR="subl"
+# LESSEDIT='mate -l %lm %f'
 
 #directories for cd to look into for path autocompletions
 #ie. 'cd mys' instead of 'cd ~/Sites/my-site/trunk'
